@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login | Moon Light Studios</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link rel="stylesheet" href="/frontend/css/admin.css">
+  </head>
+  <body class="admin-page">
+    <main class="auth-shell">
+      <form class="auth-card" id="loginForm">
+        <a href="/" class="back-link">Back to website</a>
+        <h1>Admin Login</h1>
+        <p>Manage 24/7 booking requests across Andhra Pradesh.</p>
+        <label>Email<input id="email" name="email" type="email" required autocomplete="username"></label>
+        <label>Password<input id="password" name="password" type="password" required autocomplete="current-password"></label>
+        <button class="button primary" type="submit">Login</button>
+        <p class="form-status" id="loginStatus" role="status"></p>
+        <p class="hint">Demo credentials come from <code>backend/.env</code>. Defaults: admin@moonlightstudios.in / ChangeMe@123</p>
+      </form>
+    </main>
+    <script src="/frontend/js/api.js"></script>
+    <script src="/frontend/js/admin-login.js"></script>
+  </body>
+</html>

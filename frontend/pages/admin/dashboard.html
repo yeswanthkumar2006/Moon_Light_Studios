@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard | Moon Light Studios</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link rel="stylesheet" href="/frontend/css/admin.css">
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Moon Light Studios</p>
+        <h1>Booking Dashboard</h1>
+      </div>
+      <div class="admin-actions">
+        <a class="button ghost" href="/">View Site</a>
+        <button class="button ghost" id="logoutBtn" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <section class="metric-grid" id="metricGrid">
+        <article><span>Total</span><strong>0</strong></article>
+        <article><span>Pending</span><strong>0</strong></article>
+        <article><span>Confirmed</span><strong>0</strong></article>
+        <article><span>Completed</span><strong>0</strong></article>
+      </section>
+
+      <section class="admin-table-card">
+        <div class="table-head">
+          <h2>Recent Booking Requests</h2>
+          <button class="button ghost" id="refreshBtn" type="button">Refresh</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Client</th>
+                <th>Service</th>
+                <th>City</th>
+                <th>Date</th>
+                <th>Estimate</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="bookingsBody">
+              <tr><td colspan="7">Loading bookings...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="/frontend/js/api.js"></script>
+    <script src="/frontend/js/admin-dashboard.js"></script>
+  </body>
+</html>
